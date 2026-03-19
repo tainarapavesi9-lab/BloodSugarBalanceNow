@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Glyco Lean | Support Healthy Blood Sugar & Metabolic Balance</title>
     <meta name="description" content="Support healthy blood sugar levels and feel in control again with Glyco Lean. A natural formula for metabolic balance and steady energy.">
-    <meta name="theme-color" content="#AA1D26">
+    <meta name="theme-color" content="#FF2D55">
 
     <!-- PERFORMANCE PRECONNECTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -32,14 +32,11 @@
                     },
                     colors: {
                         brand: {
-                            50: '#fff5f5',   
-                            100: '#ffe3e3',
+                            50: '#fff5f7',   
+                            100: '#ffe3e9',
                             500: '#AA1D26',  // Glyco Lean Red
                             600: '#8e1820',
-                            700: '#721319',
-                            800: '#560e13',
-                            900: '#3a090c',
-                            950: '#1e0506',
+                            rose: '#FF2D55', // Novo Rosa para o cabeçalho
                         },
                         accent: {
                             500: '#d4af37', // Gold
@@ -67,29 +64,32 @@
     <style>
         body { background-color: #ffffff; color: #1e0506; -webkit-font-smoothing: antialiased; line-height: 1.5; }
         .authority-gradient { background: linear-gradient(135deg, #AA1D26 0%, #8e1820 50%, #560e13 100%); }
-        .glass-header { background: rgba(255, 255, 255, 0.98); backdrop-filter: blur(8px); }
+        /* Cabeçalho Rosa */
+        .pink-header { background: #FF2D55; }
         .reveal-on-scroll { opacity: 0; transform: translateY(20px); transition: all 0.6s ease-out; }
         .reveal-on-scroll.active { opacity: 1; transform: translateY(0); }
-        .hero-bg-custom { background: radial-gradient(circle at 80% 50%, rgba(255, 227, 227, 0.4) 0%, rgba(255, 255, 255, 1) 100%); }
+        .hero-bg-custom { background: radial-gradient(circle at 80% 50%, rgba(255, 227, 240, 0.4) 0%, rgba(255, 255, 255, 1) 100%); }
         .cta-pulse { animation: pulse-ring 2s infinite; }
-        @keyframes pulse-ring { 0% { box-shadow: 0 0 0 0 rgba(170, 29, 38, 0.3); } 70% { box-shadow: 0 0 0 12px rgba(170, 29, 38, 0); } 100% { box-shadow: 0 0 0 0 rgba(170, 29, 38, 0); } }
+        @keyframes pulse-ring { 0% { box-shadow: 0 0 0 0 rgba(255, 45, 85, 0.3); } 70% { box-shadow: 0 0 0 12px rgba(255, 45, 85, 0); } 100% { box-shadow: 0 0 0 0 rgba(255, 45, 85, 0); } }
         details > summary::-webkit-details-marker { display: none; }
     </style>
 </head>
 
 <body class="font-sans">
 
-    <!-- HEADER -->
-    <nav class="sticky top-0 glass-header py-4 z-[100] border-b border-gray-100">
+    <!-- HEADER (Cor Rosa Adicionada) -->
+    <nav class="sticky top-0 pink-header py-4 z-[100] border-b border-white/10 shadow-lg">
         <div class="max-w-7xl mx-auto px-4 flex justify-between items-center">
             <a href="/" class="flex items-center">
-                <img src="images/glycolean-logo.png" alt="Glyco Lean Logo" class="h-10 md:h-12 w-auto">
+                <!-- Logotipo Invertido para brilhar no fundo rosa -->
+                <img src="images/glycolean-logo.png" alt="Glyco Lean Logo" class="h-10 md:h-12 w-auto brightness-0 invert">
             </a>
-            <div class="hidden lg:flex space-x-8 text-[11px] font-bold text-brand-900 uppercase tracking-widest">
-                <a href="#ingredients" class="hover:text-brand-500 transition-colors">Ingredients</a>
-                <a href="#faq" class="hover:text-brand-500 transition-colors">FAQ</a>
+            <div class="hidden lg:flex space-x-8 text-[11px] font-bold text-white uppercase tracking-widest">
+                <a href="#ingredients" class="hover:opacity-80 transition-opacity">Ingredients</a>
+                <a href="#label" class="hover:opacity-80 transition-opacity">Label</a>
+                <a href="#faq" class="hover:opacity-80 transition-opacity">FAQ</a>
             </div>
-            <a href="https://your-clickbank-link-here" class="bg-brand-500 text-white px-7 py-2.5 rounded-full text-xs font-bold uppercase tracking-widest hover:bg-brand-700 transition-all shadow-md">
+            <a href="https://myblogshop.top/r/ddpUadOw/s" class="bg-white text-brand-rose px-7 py-2.5 rounded-full text-xs font-bold uppercase tracking-widest hover:bg-gray-100 transition-all shadow-md">
                 Order Now
             </a>
         </div>
@@ -101,12 +101,12 @@
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
                 
                 <div class="text-center lg:text-left flex flex-col order-1 lg:order-none">
-                    <div class="inline-flex items-center self-center lg:self-start gap-2 px-3 py-1 bg-brand-500 text-white rounded-md text-[10px] font-black uppercase tracking-widest mb-6 animate-fade-in-up">
+                    <div class="inline-flex items-center self-center lg:self-start gap-2 px-3 py-1 bg-brand-rose text-white rounded-md text-[10px] font-black uppercase tracking-widest mb-6 animate-fade-in-up">
                         <span>Natural Support</span>
                     </div>
                     
                     <h1 class="font-display text-4xl sm:text-5xl lg:text-6xl font-black text-brand-950 leading-[1.1] tracking-tighter animate-fade-in-up">
-                        Support Healthy <span class="text-brand-500">Blood Sugar</span> & Feel In Control Again
+                        Support Healthy <span class="text-brand-rose">Blood Sugar</span> & Feel In Control Again
                     </h1>
 
                     <p class="mt-6 text-lg lg:text-xl text-gray-600 font-medium leading-relaxed max-w-xl animate-fade-in-up delay-75">
@@ -114,7 +114,7 @@
                     </p>
 
                     <div class="mt-10 flex justify-center lg:justify-start animate-fade-in-up delay-150">
-                        <a href="https://your-clickbank-link-here" class="inline-flex items-center justify-center w-full sm:w-auto px-12 py-5 bg-brand-500 text-white rounded-full text-lg font-black uppercase tracking-tight shadow-xl hover:scale-105 transition-all duration-300 cta-pulse">
+                        <a href="https://myblogshop.top/r/ddpUadOw/s" class="inline-flex items-center justify-center w-full sm:w-auto px-12 py-5 bg-brand-rose text-white rounded-full text-lg font-black uppercase tracking-tight shadow-xl hover:scale-105 transition-all duration-300 cta-pulse">
                             Order Now
                         </a>
                     </div>
@@ -140,13 +140,35 @@
             </p>
             <div class="space-y-6 text-lg text-gray-600 leading-relaxed text-left max-w-3xl mx-auto">
                 <p>Modern diets, stress, and aging can disrupt how your body manages blood sugar — leading to fatigue, imbalance, and that constant feeling of being “off.”</p>
-                <p><span class="font-black text-brand-500">Glyco Lean</span> was designed to help you take back control. This advanced natural formula supports your body’s ability to maintain healthy glucose levels, promote metabolic balance, and sustain steady energy — without extreme diets or complicated routines.</p>
+                <p><span class="font-black text-brand-rose">Glyco Lean</span> was designed to help you take back control. This advanced natural formula supports your body’s ability to maintain healthy glucose levels, promote metabolic balance, and sustain steady energy — without extreme diets or complicated routines.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- NEW FEATURED GUARANTEE SECTION -->
+    <section class="py-16 bg-brand-50 reveal-on-scroll">
+        <div class="max-w-5xl mx-auto px-4">
+            <div class="flex flex-col md:flex-row items-center gap-12 bg-white rounded-[3rem] p-8 md:p-12 shadow-xl border border-brand-100">
+                <div class="w-full md:w-1/2">
+                    <img src="images/glycolean-60.png" alt="Glyco Lean 60 Days Guarantee" class="w-full h-auto object-contain drop-shadow-lg transition-transform hover:scale-105 duration-500">
+                </div>
+                <div class="w-full md:w-1/2 text-left">
+                    <h2 class="text-3xl font-display font-black text-brand-950 mb-6 tracking-tight">Compromisso com a sua Transformação</h2>
+                    <p class="text-lg text-gray-700 leading-relaxed mb-8">
+                        Nós acreditamos tanto na eficácia do <span class="text-brand-rose font-bold">Glyco Lean</span> que oferecemos uma experiência de 60 dias sem riscos. É tempo suficiente para você sentir a diferença real nos seus níveis de energia e equilíbrio metabólico.
+                    </p>
+                    <div class="flex items-center gap-4">
+                        <div class="h-px flex-grow bg-brand-100"></div>
+                        <span class="text-[10px] font-black uppercase tracking-[0.3em] text-brand-300">Garantia Incondicional</span>
+                        <div class="h-px flex-grow bg-brand-100"></div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- WHY IT WORKS SECTION -->
-    <section class="py-24 bg-brand-50 reveal-on-scroll border-y border-brand-100/50">
+    <section class="py-24 bg-white reveal-on-scroll border-y border-brand-100/50">
         <div class="max-w-6xl mx-auto px-4">
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
                 <div>
@@ -154,49 +176,47 @@
                     <p class="text-lg text-gray-700 mb-8 font-medium">Glyco Lean combines carefully selected plant-based compounds known for their role in:</p>
                     <ul class="space-y-4">
                         <li class="flex items-center gap-4 font-bold text-brand-900">
-                            <span class="w-6 h-6 rounded-full bg-brand-500 text-white flex items-center justify-center shrink-0 text-xs">✓</span>
+                            <span class="w-6 h-6 rounded-full bg-brand-rose text-white flex items-center justify-center shrink-0 text-xs">✓</span>
                             Supporting healthy blood sugar levels
                         </li>
                         <li class="flex items-center gap-4 font-bold text-brand-900">
-                            <span class="w-6 h-6 rounded-full bg-brand-500 text-white flex items-center justify-center shrink-0 text-xs">✓</span>
+                            <span class="w-6 h-6 rounded-full bg-brand-rose text-white flex items-center justify-center shrink-0 text-xs">✓</span>
                             Promoting insulin sensitivity
                         </li>
                         <li class="flex items-center gap-4 font-bold text-brand-900">
-                            <span class="w-6 h-6 rounded-full bg-brand-500 text-white flex items-center justify-center shrink-0 text-xs">✓</span>
+                            <span class="w-6 h-6 rounded-full bg-brand-rose text-white flex items-center justify-center shrink-0 text-xs">✓</span>
                             Helping your body respond better to daily glucose fluctuations
                         </li>
                         <li class="flex items-center gap-4 font-bold text-brand-900">
-                            <span class="w-6 h-6 rounded-full bg-brand-500 text-white flex items-center justify-center shrink-0 text-xs">✓</span>
+                            <span class="w-6 h-6 rounded-full bg-brand-rose text-white flex items-center justify-center shrink-0 text-xs">✓</span>
                             Supporting energy production and metabolic efficiency
                         </li>
                         <li class="flex items-center gap-4 font-bold text-brand-900">
-                            <span class="w-6 h-6 rounded-full bg-brand-500 text-white flex items-center justify-center shrink-0 text-xs">✓</span>
+                            <span class="w-6 h-6 rounded-full bg-brand-rose text-white flex items-center justify-center shrink-0 text-xs">✓</span>
                             Reducing oxidative stress linked to metabolic imbalance
                         </li>
                     </ul>
-                    <p class="mt-10 text-brand-600 font-bold italic">Instead of forcing your body, Glyco Lean works with your system to support balance, consistency, and daily performance.</p>
                 </div>
-                <div class="bg-white p-10 rounded-[3rem] shadow-xl border border-brand-100">
+                <div class="bg-brand-50 p-10 rounded-[3rem] shadow-xl border border-brand-100">
                     <h3 class="text-2xl font-display font-black mb-8 text-brand-950">Built for Daily Use</h3>
                     <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
-                        <div class="flex items-center gap-3 p-4 bg-brand-50 rounded-2xl">
-                            <span class="text-brand-500 font-black">✔</span>
+                        <div class="flex items-center gap-3 p-4 bg-white rounded-2xl border border-brand-100">
+                            <span class="text-brand-rose font-black">✔</span>
                             <span class="text-xs font-black uppercase tracking-tighter">Natural Formula</span>
                         </div>
-                        <div class="flex items-center gap-3 p-4 bg-brand-50 rounded-2xl">
-                            <span class="text-brand-500 font-black">✔</span>
+                        <div class="flex items-center gap-3 p-4 bg-white rounded-2xl border border-brand-100">
+                            <span class="text-brand-rose font-black">✔</span>
                             <span class="text-xs font-black uppercase tracking-tighter">Non-GMO</span>
                         </div>
-                        <div class="flex items-center gap-3 p-4 bg-brand-50 rounded-2xl">
-                            <span class="text-brand-500 font-black">✔</span>
+                        <div class="flex items-center gap-3 p-4 bg-white rounded-2xl border border-brand-100">
+                            <span class="text-brand-rose font-black">✔</span>
                             <span class="text-xs font-black uppercase tracking-tighter">No Stimulants</span>
                         </div>
-                        <div class="flex items-center gap-3 p-4 bg-brand-50 rounded-2xl">
-                            <span class="text-brand-500 font-black">✔</span>
+                        <div class="flex items-center gap-3 p-4 bg-white rounded-2xl border border-brand-100">
+                            <span class="text-brand-rose font-black">✔</span>
                             <span class="text-xs font-black uppercase tracking-tighter">Easy Daily Routine</span>
                         </div>
                     </div>
-                    <p class="mt-8 text-sm text-gray-500 font-medium">No complicated protocols. No extreme restrictions. Just consistent daily support.</p>
                 </div>
             </div>
         </div>
@@ -207,34 +227,43 @@
         <div class="max-w-7xl mx-auto px-4">
             <div class="text-center mb-16">
                 <h2 class="text-4xl font-display font-black text-brand-950 tracking-tight">Inside Every Capsule</h2>
-                <p class="text-brand-500 font-bold uppercase tracking-widest text-xs mt-3">Precision Natural Extraction</p>
+                <p class="text-brand-rose font-bold uppercase tracking-widest text-xs mt-3">Precision Natural Extraction</p>
             </div>
             
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <div class="bg-brand-50 p-8 rounded-3xl border border-transparent hover:border-brand-500 transition-all text-left">
+                <div class="bg-brand-50 p-8 rounded-3xl border border-transparent hover:border-brand-rose transition-all text-left">
                     <h5 class="text-xl font-black text-brand-900 mb-3">Maca Root Extract</h5>
                     <p class="text-sm text-gray-600 leading-relaxed font-medium">Supports natural energy levels and helps your body adapt to metabolic stress.</p>
                 </div>
-                <div class="bg-brand-50 p-8 rounded-3xl border border-transparent hover:border-brand-500 transition-all text-left">
+                <div class="bg-brand-50 p-8 rounded-3xl border border-transparent hover:border-brand-rose transition-all text-left">
                     <h5 class="text-xl font-black text-brand-900 mb-3">Grape Seed Extract</h5>
                     <p class="text-sm text-gray-600 leading-relaxed font-medium">Provides powerful antioxidants that help protect cells and support glucose metabolism.</p>
                 </div>
-                <div class="bg-brand-50 p-8 rounded-3xl border border-transparent hover:border-brand-500 transition-all text-left">
+                <div class="bg-brand-50 p-8 rounded-3xl border border-transparent hover:border-brand-rose transition-all text-left">
                     <h5 class="text-xl font-black text-brand-900 mb-3">Green Tea Extract</h5>
                     <p class="text-sm text-gray-600 leading-relaxed font-medium">Supports metabolic activity and helps maintain healthy insulin response.</p>
                 </div>
-                <div class="bg-brand-50 p-8 rounded-3xl border border-transparent hover:border-brand-500 transition-all text-left">
+                <div class="bg-brand-50 p-8 rounded-3xl border border-transparent hover:border-brand-rose transition-all text-left">
                     <h5 class="text-xl font-black text-brand-900 mb-3">African Mango Seed Extract</h5>
                     <p class="text-sm text-gray-600 leading-relaxed font-medium">Helps support appetite control and metabolic balance.</p>
                 </div>
-                <div class="bg-brand-50 p-8 rounded-3xl border border-transparent hover:border-brand-500 transition-all text-left">
+                <div class="bg-brand-50 p-8 rounded-3xl border border-transparent hover:border-brand-rose transition-all text-left">
                     <h5 class="text-xl font-black text-brand-900 mb-3">Astragalus Root Extract</h5>
                     <p class="text-sm text-gray-600 leading-relaxed font-medium">Traditionally used to support metabolic health and overall resilience.</p>
                 </div>
-                <div class="bg-brand-50 p-8 rounded-3xl border border-transparent hover:border-brand-500 transition-all text-left">
+                <div class="bg-brand-50 p-8 rounded-3xl border border-transparent hover:border-brand-rose transition-all text-left">
                     <h5 class="text-xl font-black text-brand-900 mb-3">Eleutherococcus Senticosus</h5>
                     <p class="text-sm text-gray-600 leading-relaxed font-medium">An adaptogenic root that supports energy, stress response, and metabolic stability.</p>
                 </div>
+            </div>
+
+            <!-- SUPPLEMENT FACTS LABEL -->
+            <div id="label" class="mt-24 max-w-2xl mx-auto text-center reveal-on-scroll">
+                <h3 class="text-2xl font-display font-black text-brand-950 mb-8 uppercase tracking-tighter italic">Total Transparency: Supplement Facts</h3>
+                <div class="bg-white p-4 md:p-8 rounded-[2rem] shadow-2xl border border-gray-100">
+                    <img src="images/imgi_33_rotulo.png" alt="Glyco Lean Supplement Facts Label" class="w-full h-auto object-contain">
+                </div>
+                <p class="mt-6 text-sm text-gray-500 font-medium italic">Fórmula pura e potente, testada em laboratório para garantir a máxima qualidade em cada cápsula.</p>
             </div>
         </div>
     </section>
@@ -263,7 +292,7 @@
             </div>
             <div class="mt-16">
                 <p class="text-xl font-medium mb-10 italic">"You don’t need another extreme solution. You need something that works with your body — not against it."</p>
-                <a href="https://your-clickbank-link-here" class="inline-flex items-center justify-center px-14 py-6 bg-white text-brand-500 rounded-full text-2xl font-black uppercase tracking-tight shadow-2xl hover:scale-105 transition-all">Order Glyco Lean Now</a>
+                <a href="https://myblogshop.top/r/ddpUadOw/s" class="inline-flex items-center justify-center px-14 py-6 bg-white text-brand-rose rounded-full text-2xl font-black uppercase tracking-tight shadow-2xl hover:scale-105 transition-all">Order Glyco Lean Now</a>
             </div>
         </div>
     </section>
@@ -272,7 +301,7 @@
     <section class="py-24 bg-white reveal-on-scroll">
         <div class="max-w-4xl mx-auto px-4 text-center">
             <div class="inline-block p-4 rounded-full bg-brand-50 mb-6">
-                <svg class="w-12 h-12 text-brand-500" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+                <svg class="w-12 h-12 text-brand-rose" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
             </div>
             <h2 class="text-4xl font-display font-black text-brand-950 mb-6 tracking-tight">Satisfaction Guaranteed</h2>
             <p class="text-lg text-gray-700 max-w-2xl mx-auto mb-10 leading-relaxed font-medium">
@@ -289,7 +318,7 @@
                 <details class="group bg-white border border-gray-200 rounded-2xl overflow-hidden shadow-sm">
                     <summary class="flex items-center justify-between p-6 cursor-pointer font-black text-brand-950 hover:bg-brand-100/20 text-lg">
                         Are there side effects?
-                        <svg class="h-6 w-6 transition-transform group-open:rotate-180 text-brand-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="3"><path d="M19 9l-7 7-7-7" /></svg>
+                        <svg class="h-6 w-6 transition-transform group-open:rotate-180 text-brand-rose" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="3"><path d="M19 9l-7 7-7-7" /></svg>
                     </summary>
                     <div class="p-6 pt-0 text-gray-600 font-medium">
                         Glyco Lean is made with natural ingredients and is generally well tolerated. If you have a medical condition or take medication, consult your healthcare provider before use.
@@ -298,7 +327,7 @@
                 <details class="group bg-white border border-gray-200 rounded-2xl overflow-hidden shadow-sm">
                     <summary class="flex items-center justify-between p-6 cursor-pointer font-black text-brand-950 hover:bg-brand-100/20 text-lg">
                         How do I take it?
-                        <svg class="h-6 w-6 transition-transform group-open:rotate-180 text-brand-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="3"><path d="M19 9l-7 7-7-7" /></svg>
+                        <svg class="h-6 w-6 transition-transform group-open:rotate-180 text-brand-rose" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="3"><path d="M19 9l-7 7-7-7" /></svg>
                     </summary>
                     <div class="p-6 pt-0 text-gray-600 font-medium">
                         Take as directed daily for best results. Typically, one capsule per day with a meal is the recommended routine.
@@ -307,7 +336,7 @@
                 <details class="group bg-white border border-gray-200 rounded-2xl overflow-hidden shadow-sm">
                     <summary class="flex items-center justify-between p-6 cursor-pointer font-black text-brand-950 hover:bg-brand-100/20 text-lg">
                         Is this a subscription?
-                        <svg class="h-6 w-6 transition-transform group-open:rotate-180 text-brand-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="3"><path d="M19 9l-7 7-7-7" /></svg>
+                        <svg class="h-6 w-6 transition-transform group-open:rotate-180 text-brand-rose" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="3"><path d="M19 9l-7 7-7-7" /></svg>
                     </summary>
                     <div class="p-6 pt-0 text-gray-600 font-medium">
                         No. All orders are one-time purchases. You will never be billed automatically or hidden charges.
@@ -316,7 +345,7 @@
                 <details class="group bg-white border border-gray-200 rounded-2xl overflow-hidden shadow-sm">
                     <summary class="flex items-center justify-between p-6 cursor-pointer font-black text-brand-950 hover:bg-brand-100/20 text-lg">
                         How long before I notice results?
-                        <svg class="h-6 w-6 transition-transform group-open:rotate-180 text-brand-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="3"><path d="M19 9l-7 7-7-7" /></svg>
+                        <svg class="h-6 w-6 transition-transform group-open:rotate-180 text-brand-rose" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="3"><path d="M19 9l-7 7-7-7" /></svg>
                     </summary>
                     <div class="p-6 pt-0 text-gray-600 font-medium">
                         Results may vary, but many users report changes within a few weeks of consistent use.
@@ -325,7 +354,7 @@
                 <details class="group bg-white border border-gray-200 rounded-2xl overflow-hidden shadow-sm">
                     <summary class="flex items-center justify-between p-6 cursor-pointer font-black text-brand-950 hover:bg-brand-100/20 text-lg">
                         What’s inside Glyco Lean?
-                        <svg class="h-6 w-6 transition-transform group-open:rotate-180 text-brand-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="3"><path d="M19 9l-7 7-7-7" /></svg>
+                        <svg class="h-6 w-6 transition-transform group-open:rotate-180 text-brand-rose" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="3"><path d="M19 9l-7 7-7-7" /></svg>
                     </summary>
                     <div class="p-6 pt-0 text-gray-600 font-medium">
                         A blend of plant-based ingredients selected to support metabolic balance and energy, including Maca Root, Grape Seed, Green Tea, African Mango, Astragalus, and Eleutherococcus.
