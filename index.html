@@ -57,6 +57,9 @@
     <!-- Performance -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="dns-prefetch" href="//fonts.googleapis.com">
+    <link rel="dns-prefetch" href="//fonts.gstatic.com">
+    <link rel="preload" as="image" href="https://www.bloodsugarbalancenow.shop/images/og-image.jpg">
 
     <!-- FAVICON -->
     <link rel="icon" type="image/png" href="images/faviconV2.png">
@@ -128,6 +131,21 @@
 
 <body class="font-sans">
 
+    <!-- TOP BAR -->
+    <div class="bg-brand-950 text-white py-2 px-4 text-center border-b-2 border-brand-rose overflow-hidden relative z-[110]">
+        <div class="max-w-7xl mx-auto flex items-center justify-center gap-x-4 sm:gap-x-8 text-[10px] sm:text-xs font-bold uppercase tracking-wider">
+            <div class="flex items-center gap-2">
+                <img src="images/imgi_15_free-shipping-1@2x.png" alt="Free Shipping" class="h-5 w-auto">
+                <span>Free Expedited US Shipping</span>
+            </div>
+            <div class="w-px h-3 bg-white/20"></div>
+            <div class="flex items-center gap-1.5">
+                <svg class="w-4 h-4 text-brand-rose" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M2.166 4.999A11.954 11.954 0 0010 1.944 11.954 11.954 0 0017.834 5c.11.65.166 1.32.166 2.001 0 5.225-3.34 9.67-8 11.317C5.34 16.67 2 12.225 2 7c0-.682.057-1.35.166-2.001zm11.541 3.708a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+                <span>60-Day Guarantee</span>
+            </div>
+        </div>
+    </div>
+
     <!-- HEADER -->
     <nav class="sticky top-0 pink-header py-4 z-[100] border-b border-white/10 shadow-lg">
         <div class="max-w-7xl mx-auto px-4 flex justify-between items-center">
@@ -163,11 +181,11 @@
                         Starting in weeks — take back control of your routine with a formula designed to master your metabolic balance.
                     </p>
 
-                    <div class="mt-10 flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-6 animate-fade-in-up delay-150">
+                    <div class="mt-10 flex justify-center lg:justify-start animate-fade-in-up delay-150">
+                        <!-- Removido o selo colorido daqui conforme solicitado -->
                         <a href="https://www.bloodsugarbalancenow.shop/" class="inline-flex items-center justify-center w-full sm:w-auto px-12 py-5 bg-brand-rose text-white rounded-full text-lg font-black uppercase tracking-tight shadow-xl hover:scale-105 transition-all duration-300 cta-pulse">
                             Order Now
                         </a>
-                        <img src="images/imgi_15_free-shipping-1@2x.png" alt="Free Shipping" class="h-14 w-auto drop-shadow-md">
                     </div>
 
                     <div class="mt-12 flex flex-wrap items-center justify-center lg:justify-start gap-6 animate-fade-in-up delay-300">
@@ -196,13 +214,12 @@
         </div>
     </section>
 
-    <!-- COMPROMISSO COM A SUA TRANSFORMAÇÃO (Ajustado tamanho e removido selo dourado conforme pedido) -->
+    <!-- COMPROMISSO COM A SUA TRANSFORMAÇÃO -->
     <section class="py-20 bg-brand-50 reveal-on-scroll">
         <div class="max-w-6xl mx-auto px-4">
             <div class="flex flex-col md:flex-row items-center gap-10 lg:gap-16 bg-white rounded-[3rem] p-8 md:p-12 shadow-xl border border-brand-100">
                 <div class="w-full md:w-[40%] flex justify-center">
-                    <!-- Foto do produto limpa conforme orientação -->
-                    <img src="images/glycolean.png" alt="Glyco Lean Product" class="w-full max-w-[320px] h-auto object-contain drop-shadow-2xl transition-transform hover:scale-105 duration-500">
+                    <img src="images/glycolean-60.png" alt="Glyco Lean Product" class="w-full max-w-[400px] h-auto object-contain drop-shadow-2xl transition-transform hover:scale-105 duration-500">
                 </div>
                 <div class="w-full md:w-[60%] text-left">
                     <h2 class="text-3xl lg:text-4xl font-display font-black text-brand-950 mb-6 tracking-tight leading-tight uppercase">Compromisso com a sua Transformação</h2>
@@ -210,7 +227,6 @@
                         Nós consideramos tanto a eficácia do <span class="text-brand-rose font-bold">Glyco Lean</span> que oferecemos uma experiência de 60 dias sem riscos. É tempo suficiente para você sentir a diferença real em seus níveis de energia e equilíbrio metabólico.
                     </p>
                     
-                    <!-- Selos de certificação abaixo do texto como solicitado -->
                     <div class="mb-10">
                         <img src="images/imgi_13_certifications.png" alt="Selos Oficiais" class="h-14 w-auto object-contain">
                     </div>
@@ -280,7 +296,7 @@
         </div>
     </section>
 
-    <!-- WHAT YOU MAY NOTICE (Design Refinado) -->
+    <!-- WHAT YOU MAY NOTICE -->
     <section class="py-24 authority-gradient text-white reveal-on-scroll">
         <div class="max-w-6xl mx-auto px-4">
             <div class="text-center mb-16">
@@ -318,12 +334,11 @@
         </div>
     </section>
 
-    <!-- SATISFACTION GUARANTEED (Novo Formato Tarja Preta) -->
+    <!-- SATISFACTION GUARANTEED (Black Bar Format com Selo colorido de Frete) -->
     <section class="py-16 bg-black text-white reveal-on-scroll overflow-hidden">
         <div class="max-w-6xl mx-auto px-4">
             <div class="flex flex-col md:flex-row items-center justify-center gap-12 lg:gap-24">
                 <div class="shrink-0 animate-float">
-                    <!-- Apenas o selo de frete colorido conforme solicitado -->
                     <img src="images/imgi_15_free-shipping-1@2x.png" alt="Free Shipping Seal" class="h-32 md:h-40 w-auto object-contain">
                 </div>
                 <div class="text-center md:text-left max-w-2xl">
@@ -492,7 +507,7 @@
             `,
             'modal-privacy': `
                 <h3 class="text-3xl font-display font-black text-brand-rose mb-8">Privacy Policy</h3>
-                <p>Ensuring your privacy is of paramount importance to us. This Privacy Policy governs how we handle your personal information while you navigate and use our website.</p>
+                <p>Ensuring your privacy is of paramount importance to us. This Privacy Policy governs how we handle your personal information while you navigate and use our website. It explains how we collect, use, and disclose information, as well as your rights over the data you provide.</p>
                 <h4>Information We Collect</h4>
                 <ul>
                     <li><strong>Non-Personal Information:</strong> We gather non-personal information like browser type, language preferences, referring site, and the date and time of visitor requests.</li>
