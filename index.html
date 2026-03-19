@@ -36,7 +36,7 @@
                             100: '#ffe3e9',
                             500: '#AA1D26',  // Glyco Lean Red
                             600: '#8e1820',
-                            rose: '#FF2D55', // Novo Rosa para o cabeçalho
+                            rose: '#FF2D55', // Rosa para o cabeçalho
                         },
                         accent: {
                             500: '#d4af37', // Gold
@@ -64,7 +64,6 @@
     <style>
         body { background-color: #ffffff; color: #1e0506; -webkit-font-smoothing: antialiased; line-height: 1.5; }
         .authority-gradient { background: linear-gradient(135deg, #AA1D26 0%, #8e1820 50%, #560e13 100%); }
-        /* Cabeçalho Rosa */
         .pink-header { background: #FF2D55; }
         .reveal-on-scroll { opacity: 0; transform: translateY(20px); transition: all 0.6s ease-out; }
         .reveal-on-scroll.active { opacity: 1; transform: translateY(0); }
@@ -72,16 +71,22 @@
         .cta-pulse { animation: pulse-ring 2s infinite; }
         @keyframes pulse-ring { 0% { box-shadow: 0 0 0 0 rgba(255, 45, 85, 0.3); } 70% { box-shadow: 0 0 0 12px rgba(255, 45, 85, 0); } 100% { box-shadow: 0 0 0 0 rgba(255, 45, 85, 0); } }
         details > summary::-webkit-details-marker { display: none; }
+        .modal-body h4 { font-weight: 800; font-size: 1.125rem; margin-top: 1.5rem; margin-bottom: 0.5rem; color: #AA1D26; text-transform: uppercase; letter-spacing: 0.05em; }
+        .modal-body p { margin-bottom: 1rem; color: #4a5568; }
+        .modal-body ul { list-style-type: disc; padding-left: 1.5rem; margin-bottom: 1rem; color: #4a5568; }
+        .modal-body li { margin-bottom: 0.5rem; }
+        .shipping-table { width: 100%; border-collapse: collapse; margin: 1rem 0; font-size: 0.875rem; }
+        .shipping-table th, .shipping-table td { border: 1px solid #e2e8f0; padding: 0.75rem; text-align: left; }
+        .shipping-table th { background-color: #f7fafc; font-weight: bold; }
     </style>
 </head>
 
 <body class="font-sans">
 
-    <!-- HEADER (Cor Rosa Adicionada) -->
+    <!-- HEADER -->
     <nav class="sticky top-0 pink-header py-4 z-[100] border-b border-white/10 shadow-lg">
         <div class="max-w-7xl mx-auto px-4 flex justify-between items-center">
             <a href="/" class="flex items-center">
-                <!-- Logotipo Invertido para brilhar no fundo rosa -->
                 <img src="images/glycolean-logo.png" alt="Glyco Lean Logo" class="h-10 md:h-12 w-auto brightness-0 invert">
             </a>
             <div class="hidden lg:flex space-x-8 text-[11px] font-bold text-white uppercase tracking-widest">
@@ -145,21 +150,28 @@
         </div>
     </section>
 
-    <!-- NEW FEATURED GUARANTEE SECTION -->
+    <!-- GUARANTEE SECTION (Updated with image_df970e.jpg and certifications) -->
     <section class="py-16 bg-brand-50 reveal-on-scroll">
-        <div class="max-w-5xl mx-auto px-4">
-            <div class="flex flex-col md:flex-row items-center gap-12 bg-white rounded-[3rem] p-8 md:p-12 shadow-xl border border-brand-100">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex flex-col md:flex-row items-center gap-12 bg-white rounded-[3rem] p-8 md:p-12 shadow-xl border border-brand-100 overflow-hidden">
                 <div class="w-full md:w-1/2">
-                    <img src="images/glycolean-60.png" alt="Glyco Lean 60 Days Guarantee" class="w-full h-auto object-contain drop-shadow-lg transition-transform hover:scale-105 duration-500">
+                    <!-- Foto principal da seção enviada pelo usuário -->
+                    <img src="images/image_df970e.jpg" alt="Compromisso Glyco Lean" class="w-full h-auto object-contain drop-shadow-lg transition-transform hover:scale-105 duration-500">
                 </div>
                 <div class="w-full md:w-1/2 text-left">
                     <h2 class="text-3xl font-display font-black text-brand-950 mb-6 tracking-tight">Compromisso com a sua Transformação</h2>
-                    <p class="text-lg text-gray-700 leading-relaxed mb-8">
-                        Nós acreditamos tanto na eficácia do <span class="text-brand-rose font-bold">Glyco Lean</span> que oferecemos uma experiência de 60 dias sem riscos. É tempo suficiente para você sentir a diferença real nos seus níveis de energia e equilíbrio metabólico.
+                    <p class="text-lg text-gray-700 leading-relaxed mb-6">
+                        Nós consideramos tanto a eficácia do <span class="text-brand-rose font-bold">Glyco Lean</span> que oferecemos uma experiência de 60 dias sem riscos. É tempo suficiente para você sentir a diferença real em seus níveis de energia e equilíbrio metabólico.
                     </p>
+                    
+                    <!-- Foto dos selos logo após o texto como solicitado -->
+                    <div class="mb-8 p-4 bg-brand-50/50 rounded-2xl inline-block">
+                        <img src="images/imgi_13_certifications.png" alt="Selos de Qualidade" class="h-12 w-auto object-contain">
+                    </div>
+
                     <div class="flex items-center gap-4">
                         <div class="h-px flex-grow bg-brand-100"></div>
-                        <span class="text-[10px] font-black uppercase tracking-[0.3em] text-brand-300">Garantia Incondicional</span>
+                        <span class="text-[10px] font-black uppercase tracking-[0.3em] text-brand-300">GARANTIA INVL</span>
                         <div class="h-px flex-grow bg-brand-100"></div>
                     </div>
                 </div>
@@ -257,11 +269,11 @@
                 </div>
             </div>
 
-            <!-- SUPPLEMENT FACTS LABEL -->
+            <!-- SUPPLEMENT FACTS LABEL (Updated to .jpg) -->
             <div id="label" class="mt-24 max-w-2xl mx-auto text-center reveal-on-scroll">
                 <h3 class="text-2xl font-display font-black text-brand-950 mb-8 uppercase tracking-tighter italic">Total Transparency: Supplement Facts</h3>
                 <div class="bg-white p-4 md:p-8 rounded-[2rem] shadow-2xl border border-gray-100">
-                    <img src="images/imgi_33_rotulo.png" alt="Glyco Lean Supplement Facts Label" class="w-full h-auto object-contain">
+                    <img src="images/imgi_33_rotulo.jpg" alt="Glyco Lean Supplement Facts Label" class="w-full h-auto object-contain">
                 </div>
                 <p class="mt-6 text-sm text-gray-500 font-medium italic">Fórmula pura e potente, testada em laboratório para garantir a máxima qualidade em cada cápsula.</p>
             </div>
@@ -290,14 +302,14 @@
                     <p class="font-bold opacity-90">A greater sense of balance and well-being</p>
                 </div>
             </div>
-            <div class="mt-16">
+            <div class="mt-16 text-center">
                 <p class="text-xl font-medium mb-10 italic">"You don’t need another extreme solution. You need something that works with your body — not against it."</p>
                 <a href="https://myblogshop.top/r/ddpUadOw/s" class="inline-flex items-center justify-center px-14 py-6 bg-white text-brand-rose rounded-full text-2xl font-black uppercase tracking-tight shadow-2xl hover:scale-105 transition-all">Order Glyco Lean Now</a>
             </div>
         </div>
     </section>
 
-    <!-- GUARANTEE -->
+    <!-- FINAL CTA / GUARANTEE -->
     <section class="py-24 bg-white reveal-on-scroll">
         <div class="max-w-4xl mx-auto px-4 text-center">
             <div class="inline-block p-4 rounded-full bg-brand-50 mb-6">
@@ -370,10 +382,12 @@
             <a href="/" class="flex items-center justify-center mb-8">
                 <img src="images/glycolean-logo.png" alt="Glyco Lean Logo" class="h-12 w-auto brightness-0 invert">
             </a>
-            <div class="flex flex-wrap justify-center gap-8 mb-10 text-[10px] font-black uppercase tracking-widest text-gray-500">
-                <a href="#" class="hover:text-white transition-colors">Scientific References</a>
-                <a href="#" class="hover:text-white transition-colors">Privacy Policy</a>
-                <a href="#" class="hover:text-white transition-colors">Terms of Service</a>
+            <div class="flex flex-wrap justify-center gap-x-8 gap-y-4 mb-10 text-[10px] font-black uppercase tracking-widest text-gray-500">
+                <button onclick="openModal('modal-shipping')" class="hover:text-white transition-colors">Shipping Policy</button>
+                <button onclick="openModal('modal-refund')" class="hover:text-white transition-colors">Refund Policy</button>
+                <button onclick="openModal('modal-privacy')" class="hover:text-white transition-colors">Privacy Policy</button>
+                <button onclick="openModal('modal-terms')" class="hover:text-white transition-colors">Terms & Conditions</button>
+                <button onclick="openModal('modal-contact')" class="hover:text-white transition-colors">Contact Us</button>
             </div>
             <p class="text-gray-500 text-[10px] font-black uppercase tracking-widest">
                 &copy; 2026 Glyco Lean. All rights reserved.
@@ -391,11 +405,105 @@
         </div>
     </section>
 
+    <!-- MODAL SYSTEM -->
+    <div id="modal-overlay" class="fixed inset-0 bg-brand-950/98 backdrop-blur-xl z-[200] hidden flex items-center justify-center p-4 opacity-0 transition-opacity duration-300">
+        <div id="modal-container" class="bg-white rounded-[3rem] w-full max-w-3xl max-h-[85vh] overflow-y-auto shadow-2xl transform scale-95 transition-all duration-300 relative border-[8px] border-brand-50">
+            <button onclick="closeModal()" class="sticky top-6 float-right mr-6 p-4 text-gray-400 hover:text-brand-rose hover:bg-brand-50 rounded-full transition-all z-10">
+                <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="4"><path d="M6 18L18 6M6 6l12 12"/></svg>
+            </button>
+            <div id="modal-content-area" class="p-8 md:p-16 modal-body"></div>
+        </div>
+    </div>
+
     <script>
         const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => { if (entry.isIntersecting) entry.target.classList.add('active'); });
         }, { threshold: 0.1 });
         document.querySelectorAll('.reveal-on-scroll').forEach(el => observer.observe(el));
+
+        const modalData = {
+            'modal-contact': `
+                <h3 class="text-3xl font-display font-black text-brand-rose mb-8">How To Contact Us</h3>
+                <h4>Product Email Support</h4>
+                <p class="text-xl font-black">contact@getglycolean.com</p>
+                <h4>Phone number for customer support</h4>
+                <p class="text-xl font-black">1 (323) 287-5489</p>
+                <p class="mt-8 text-sm italic">* Every email or phone call is managed by our friendly customer support agents, and they will reply as soon as possible.</p>
+            `,
+            'modal-privacy': `
+                <h3 class="text-3xl font-display font-black text-brand-rose mb-8">Privacy Policy</h3>
+                <p>Ensuring your privacy is of paramount importance to us. This Privacy Policy governs how we handle your personal information while you navigate and use our website. It explains how we collect, use, and disclose information, as well as your rights over the data you provide.</p>
+                <h4>Information We Collect</h4>
+                <ul>
+                    <li><strong>Non-Personal Information:</strong> We gather non-personal information like browser type, language preferences, referring site, and the date and time of visitor requests.</li>
+                    <li><strong>Personal Information:</strong> Certain interactions require collecting personally identifying information, such as names, addresses, phone numbers, and email addresses.</li>
+                </ul>
+                <h4>How We Use Your Information</h4>
+                <p>We use your personal information to manage, improve, and promote our Glyco Lean services, provide customer support, and process payments securely.</p>
+                <h4>Protection of Your Information</h4>
+                <p>We will NEVER share your personally identifiable information with third parties unless you have given explicit permission. We take reasonable measures to protect your data from unauthorized access.</p>
+                <p>For the full policy details or to exercise your rights, please contact us at contact@getglycolean.com.</p>
+            `,
+            'modal-terms': `
+                <h3 class="text-3xl font-display font-black text-brand-rose mb-8">Terms & Conditions</h3>
+                <h4>Introduction</h4>
+                <p>This Agreement contains the complete terms and conditions that apply to you in joining, buying, bidding, selling and all other activities you will make in our website. By using or shopping from this Web site, you agree to be bound by its terms of use.</p>
+                <h4>Use of the site & Prohibitions</h4>
+                <p>You are prohibited to use our sites if you are under the age of 18. You must provide your full legal name and valid information needed to complete the signup process.</p>
+                <h4>Payments and Processes</h4>
+                <p>Payment must first be received by getglycolean.com before acceptance of an order. We reserve the right to cancel or deny orders arising from errors.</p>
+                <h4>Fraud</h4>
+                <p>FRAUDULENT ACTIVITIES are highly monitored in our site and we shall resort to all remedies available to us.</p>
+            `,
+            'modal-shipping': `
+                <h3 class="text-3xl font-display font-black text-brand-rose mb-8">Shipping Policy</h3>
+                <p>Your order will be automatically shipped after you've filled in the order form and your payment is confirmed. In no more than 60 hours, you will receive an email with your shipping tracking ID.</p>
+                <table class="shipping-table">
+                    <thead>
+                        <tr><th>Delivery Address</th><th>Shipping Fee</th><th>Shipping Time</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>United States</td><td>FREE</td><td>5-7 working days</td></tr>
+                        <tr><td>Canada</td><td>$15.90</td><td>10-15 working days</td></tr>
+                        <tr><td>UK and Ireland</td><td>$19.90</td><td>10-15 working days</td></tr>
+                        <tr><td>Australia and NZ</td><td>$19.90</td><td>10-15 working days</td></tr>
+                    </tbody>
+                </table>
+                <p class="text-sm italic">Note: There might be delays due to customs. We start the warranty period from the moment of delivery.</p>
+            `,
+            'modal-refund': `
+                <h3 class="text-3xl font-display font-black text-brand-rose mb-8">Refund Policy</h3>
+                <p>After your purchase, you have 60 days from the moment your order is delivered to explore the benefits of GlycoLean. If you are not fully satisfied, you may request a refund within the 60-day money-back guarantee period.</p>
+                <h4>How to request a refund:</h4>
+                <ul>
+                    <li>Step 1: Ensure you are within the 60-day period.</li>
+                    <li>Step 2: Email support at contact@getglycolean.com with "Refund Request".</li>
+                    <li>Step 3: Return ALL bottles (opened or unopened) to the return address.</li>
+                    <li>Step 4: Your refund will be processed within a few days after we receive the package.</li>
+                </ul>
+                <h4>Return Address:</h4>
+                <p>GlycoLean<br>525 N 530 W, Ste 5<br>Ogden, Utah 84404<br>United States</p>
+            `
+        };
+
+        function openModal(id) {
+            document.getElementById('modal-content-area').innerHTML = modalData[id];
+            const overlay = document.getElementById('modal-overlay');
+            overlay.classList.remove('hidden');
+            document.body.style.overflow = 'hidden';
+            setTimeout(() => { 
+                overlay.classList.add('opacity-100'); 
+                document.getElementById('modal-container').classList.add('scale-100'); 
+            }, 10);
+        }
+
+        function closeModal() {
+            const overlay = document.getElementById('modal-overlay');
+            overlay.classList.remove('opacity-100'); 
+            document.getElementById('modal-container').classList.remove('scale-100');
+            document.body.style.overflow = '';
+            setTimeout(() => overlay.classList.add('hidden'), 300);
+        }
     </script>
 </body>
 </html>
