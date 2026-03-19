@@ -6,20 +6,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GlycoLean | Natural Blood Sugar & Metabolic Support</title>
-    <meta name="description" content="Support healthy blood sugar levels and natural energy with GlycoLean. A premium formula designed for metabolic balance. 60-day money-back guarantee.">
-    <meta name="keywords" content="GlycoLean, blood sugar supplement, metabolic support, natural energy, glucose balance, weight management support">
-    <link rel="canonical" href="https://glycolean-official.vercel.app/">
-    <meta name="referrer" content="strict-origin-when-cross-origin">
-    <meta name="robots" content="index, follow">
+    <title>Glyco Lean | Support Healthy Blood Sugar & Metabolic Balance</title>
+    <meta name="description" content="Support healthy blood sugar levels and feel in control again with Glyco Lean. A natural formula for metabolic balance and steady energy.">
     <meta name="theme-color" content="#AA1D26">
-
-    <!-- ================= OPEN GRAPH ================= -->
-    <meta property="og:type" content="product">
-    <meta property="og:title" content="GlycoLean | Take Control of Your Metabolic Health">
-    <meta property="og:description" content="Support healthy glucose levels and improve daily energy with GlycoLean. Natural, risk-free 60-day guarantee.">
-    <meta property="og:url" content="https://glycolean-official.vercel.app/">
-    <meta property="og:image" content="images/glycolean.png">
 
     <!-- PERFORMANCE PRECONNECTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -45,7 +34,7 @@
                         brand: {
                             50: '#fff5f5',   
                             100: '#ffe3e3',
-                            500: '#AA1D26',  // GlycoLean Red Core
+                            500: '#AA1D26',  // Glyco Lean Red
                             600: '#8e1820',
                             700: '#721319',
                             800: '#560e13',
@@ -54,13 +43,11 @@
                         },
                         accent: {
                             500: '#d4af37', // Gold
-                            600: '#b8962e'
                         }
                     },
                     animation: {
                         'fade-in-up': 'fadeInUp 0.6s ease-out forwards',
                         'float': 'float 6s ease-in-out infinite',
-                        'scroll': 'scroll 60s linear infinite',
                     },
                     keyframes: {
                         fadeInUp: {
@@ -70,10 +57,6 @@
                         float: {
                             '0%, 100%': { transform: 'translateY(0)' },
                             '50%': { transform: 'translateY(-10px)' },
-                        },
-                        scroll: {
-                            '0%': { transform: 'translateX(0)' },
-                            '100%': { transform: 'translateX(calc(-400px * 5 - 2rem * 5))' }
                         }
                     }
                 }
@@ -91,41 +74,20 @@
         .cta-pulse { animation: pulse-ring 2s infinite; }
         @keyframes pulse-ring { 0% { box-shadow: 0 0 0 0 rgba(170, 29, 38, 0.3); } 70% { box-shadow: 0 0 0 12px rgba(170, 29, 38, 0); } 100% { box-shadow: 0 0 0 0 rgba(170, 29, 38, 0); } }
         details > summary::-webkit-details-marker { display: none; }
-        .reviews-container { position: relative; width: 100%; overflow: hidden; padding: 1rem 0; }
-        .reviews-slider { display: flex; width: max-content; gap: 2rem; }
-        .review-card { width: 380px; flex-shrink: 0; background: #fdf2f2; border-radius: 1.5rem; padding: 2.5rem; border: 1px solid #f9e2e2; }
-        .reviews-container:hover .reviews-slider { animation-play-state: paused; }
     </style>
 </head>
 
 <body class="font-sans">
 
-    <!-- TOP BAR -->
-    <div class="bg-brand-950 text-white py-2 px-4 text-center border-b-2 border-brand-500 overflow-hidden relative z-[110]">
-        <div class="max-w-7xl mx-auto flex items-center justify-center gap-x-4 sm:gap-x-8 text-[10px] sm:text-xs font-bold uppercase tracking-wider">
-            <div class="flex items-center gap-1.5">
-                <svg class="w-4 h-4 text-brand-500" fill="currentColor" viewBox="0 0 20 20"><path d="M3 1a1 1 0 000 2h1.22l.305 1.222a.997.997 0 00.01.042l1.358 5.43-.893.892C3.74 11.846 4.632 14 6.414 14H15a1 1 0 000-2H6.414l1-1H14a1 1 0 00.894-.553l3-6A1 1 0 0017 3H6.28l-.31-1.243A1 1 0 005 1H3zM16 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM6.5 18a1.5 1.5 0 100-3 1.5 1.5 0 000 3z"/></svg>
-                <span>Free Expedited US Shipping</span>
-            </div>
-            <div class="w-px h-3 bg-white/20"></div>
-            <div class="flex items-center gap-1.5 text-accent-500">
-                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M2.166 4.999A11.954 11.954 0 0010 1.944 11.954 11.954 0 0017.834 5c.11.65.166 1.32.166 2.001 0 5.225-3.34 9.67-8 11.317C5.34 16.67 2 12.225 2 7c0-.682.057-1.35.166-2.001zm11.541 3.708a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
-                <span>Full 60-Day Money Back Guarantee</span>
-            </div>
-        </div>
-    </div>
-
     <!-- HEADER -->
     <nav class="sticky top-0 glass-header py-4 z-[100] border-b border-gray-100">
         <div class="max-w-7xl mx-auto px-4 flex justify-between items-center">
             <a href="/" class="flex items-center gap-2">
-                <img src="images/glycolean-logo.png" alt="GlycoLean Logo" class="h-10 w-auto">
-                <span class="font-display font-black text-xl md:text-2xl text-brand-500 uppercase tracking-tighter">GLYCO<span class="text-brand-900">LEAN</span></span>
+                <img src="images/glycolean-logo.png" alt="Glyco Lean Logo" class="h-10 w-auto">
+                <span class="font-display font-black text-xl md:text-2xl text-brand-500 uppercase tracking-tighter">GLYCO <span class="text-brand-900">LEAN</span></span>
             </a>
             <div class="hidden lg:flex space-x-8 text-[11px] font-bold text-brand-900 uppercase tracking-widest">
-                <a href="#benefits" class="hover:text-brand-500 transition-colors">Benefits</a>
-                <a href="#reviews" class="hover:text-brand-500 transition-colors">Reviews</a>
-                <a href="#ingredients" class="hover:text-brand-500 transition-colors">Science</a>
+                <a href="#ingredients" class="hover:text-brand-500 transition-colors">Ingredients</a>
                 <a href="#faq" class="hover:text-brand-500 transition-colors">FAQ</a>
             </div>
             <a href="https://your-clickbank-link-here" class="bg-brand-500 text-white px-7 py-2.5 rounded-full text-xs font-bold uppercase tracking-widest hover:bg-brand-700 transition-all shadow-md">
@@ -141,228 +103,236 @@
                 
                 <div class="text-center lg:text-left flex flex-col order-1 lg:order-none">
                     <div class="inline-flex items-center self-center lg:self-start gap-2 px-3 py-1 bg-brand-500 text-white rounded-md text-[10px] font-black uppercase tracking-widest mb-6 animate-fade-in-up">
-                        <span>New Precision Formula</span>
+                        <span>Natural Support</span>
                     </div>
                     
-                    <h1 class="font-display text-4xl sm:text-5xl lg:text-7xl font-black text-brand-950 leading-[1.1] tracking-tighter animate-fade-in-up">
-                        Master Your <br class="hidden lg:block"> <span class="text-brand-500">Blood Sugar</span> <br class="hidden lg:block"> Naturally
+                    <h1 class="font-display text-4xl sm:text-5xl lg:text-6xl font-black text-brand-950 leading-[1.1] tracking-tighter animate-fade-in-up">
+                        Support Healthy <span class="text-brand-500">Blood Sugar</span> & Feel In Control Again
                     </h1>
 
                     <p class="mt-6 text-lg lg:text-xl text-gray-600 font-medium leading-relaxed max-w-xl animate-fade-in-up delay-75">
-                        Break the cycle of energy crashes and sugar cravings. GlycoLean supports healthy glucose levels and optimized metabolism with every dose.
+                        Starting in weeks — take back control of your routine with a formula designed to master your metabolic balance.
                     </p>
 
                     <div class="mt-10 flex justify-center lg:justify-start animate-fade-in-up delay-150">
                         <a href="https://your-clickbank-link-here" class="inline-flex items-center justify-center w-full sm:w-auto px-12 py-5 bg-brand-500 text-white rounded-full text-lg font-black uppercase tracking-tight shadow-xl hover:scale-105 transition-all duration-300 cta-pulse">
-                            Claim Your Discount Today
+                            Order Now
                         </a>
                     </div>
 
-                    <!-- CERTIFICATIONS IN HERO AS REQUESTED -->
                     <div class="mt-12 flex flex-col items-center lg:items-start animate-fade-in-up delay-300">
-                        <p class="text-[10px] font-black uppercase tracking-widest text-brand-900/40 mb-4">Quality & Safety Certified</p>
-                        <img src="images/imgi_13_certifications.png" alt="GlycoLean Certifications" class="h-16 w-auto object-contain">
+                        <img src="images/imgi_13_certifications.png" alt="Certifications" class="h-14 w-auto object-contain">
                     </div>
                 </div>
 
-                <div class="relative w-full flex flex-col items-center lg:items-end animate-fade-in-up delay-150">
-                    <img src="images/glycolean.png" alt="GlycoLean Supplement Bottle" class="object-contain w-full h-auto max-w-[320px] lg:max-w-[480px] drop-shadow-2xl animate-float">
+                <div class="relative w-full flex justify-center lg:justify-end animate-fade-in-up delay-150">
+                    <img src="images/glycolean.png" alt="Glyco Lean Bottle" class="object-contain w-full h-auto max-w-[350px] lg:max-w-[500px] drop-shadow-2xl animate-float">
                 </div>
 
             </div>
         </div>
     </section>
 
-    <!-- BENEFITS SECTION -->
-    <section id="benefits" class="py-24 bg-white reveal-on-scroll">
-        <div class="max-w-6xl mx-auto px-4">
-            <div class="text-center mb-16">
-                <h2 class="text-3xl lg:text-5xl font-display font-black text-brand-950 mb-6 tracking-tight">Regain Control of Your Energy</h2>
-                <p class="text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed font-medium">
-                    Are you tired of the "3 PM Slump," constant sugar cravings, and feeling like your metabolism is working against you? GlycoLean is here to bridge the gap.
-                </p>
+    <!-- INTRO SECTION -->
+    <section class="py-20 bg-white reveal-on-scroll">
+        <div class="max-w-4xl mx-auto px-4 text-center">
+            <p class="text-xl lg:text-2xl text-gray-800 leading-relaxed font-medium italic mb-8">
+                "If your energy crashes, your cravings spike, or your body no longer responds the way it used to… you're not alone."
+            </p>
+            <div class="space-y-6 text-lg text-gray-600 leading-relaxed text-left max-w-3xl mx-auto">
+                <p>Modern diets, stress, and aging can disrupt how your body manages blood sugar — leading to fatigue, imbalance, and that constant feeling of being “off.”</p>
+                <p><span class="font-black text-brand-500">Glyco Lean</span> was designed to help you take back control. This advanced natural formula supports your body’s ability to maintain healthy glucose levels, promote metabolic balance, and sustain steady energy — without extreme diets or complicated routines.</p>
             </div>
+        </div>
+    </section>
 
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
-                <div class="bg-brand-900 text-white p-10 rounded-[2.5rem] shadow-xl relative overflow-hidden text-left">
-                    <div class="absolute -top-10 -right-10 w-48 h-48 bg-brand-500/20 rounded-full blur-[60px]"></div>
-                    <h3 class="text-2xl font-display font-black mb-8 text-accent-500">The Modern Metabolic Trap:</h3>
-                    <ul class="space-y-6">
-                        <li class="flex items-start gap-4">
-                            <div class="mt-1 w-5 h-5 rounded-full border-2 border-brand-500 flex items-center justify-center shrink-0">
-                                <div class="w-2 h-2 bg-brand-500 rounded-full"></div>
-                            </div>
-                            <span class="font-bold opacity-90">Spiking glucose levels causing irritability</span>
+    <!-- WHY IT WORKS SECTION -->
+    <section class="py-24 bg-brand-50 reveal-on-scroll border-y border-brand-100/50">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                <div>
+                    <h2 class="text-4xl font-display font-black text-brand-950 mb-8 tracking-tight">Why Glyco Lean Works</h2>
+                    <p class="text-lg text-gray-700 mb-8 font-medium">Glyco Lean combines carefully selected plant-based compounds known for their role in:</p>
+                    <ul class="space-y-4">
+                        <li class="flex items-center gap-4 font-bold text-brand-900">
+                            <span class="w-6 h-6 rounded-full bg-brand-500 text-white flex items-center justify-center shrink-0 text-xs">✓</span>
+                            Supporting healthy blood sugar levels
                         </li>
-                        <li class="flex items-start gap-4">
-                            <div class="mt-1 w-5 h-5 rounded-full border-2 border-brand-500 flex items-center justify-center shrink-0">
-                                <div class="w-2 h-2 bg-brand-500 rounded-full"></div>
-                            </div>
-                            <span class="font-bold opacity-90">Stubborn weight that refuses to budge</span>
+                        <li class="flex items-center gap-4 font-bold text-brand-900">
+                            <span class="w-6 h-6 rounded-full bg-brand-500 text-white flex items-center justify-center shrink-0 text-xs">✓</span>
+                            Promoting insulin sensitivity
                         </li>
-                        <li class="flex items-start gap-4">
-                            <div class="mt-1 w-5 h-5 rounded-full border-2 border-brand-500 flex items-center justify-center shrink-0">
-                                <div class="w-2 h-2 bg-brand-500 rounded-full"></div>
-                            </div>
-                            <span class="font-bold opacity-90">Uncontrollable hunger and snack cravings</span>
+                        <li class="flex items-center gap-4 font-bold text-brand-900">
+                            <span class="w-6 h-6 rounded-full bg-brand-500 text-white flex items-center justify-center shrink-0 text-xs">✓</span>
+                            Helping your body respond better to daily glucose fluctuations
+                        </li>
+                        <li class="flex items-center gap-4 font-bold text-brand-900">
+                            <span class="w-6 h-6 rounded-full bg-brand-500 text-white flex items-center justify-center shrink-0 text-xs">✓</span>
+                            Supporting energy production and metabolic efficiency
+                        </li>
+                        <li class="flex items-center gap-4 font-bold text-brand-900">
+                            <span class="w-6 h-6 rounded-full bg-brand-500 text-white flex items-center justify-center shrink-0 text-xs">✓</span>
+                            Reducing oxidative stress linked to metabolic imbalance
                         </li>
                     </ul>
+                    <p class="mt-10 text-brand-600 font-bold italic">Instead of forcing your body, Glyco Lean works with your system to support balance, consistency, and daily performance.</p>
                 </div>
-                
-                <div class="flex flex-col justify-center gap-8 text-left">
-                    <h3 class="text-3xl font-display font-black text-brand-950 leading-tight">Advanced Glucose <br>Optimization</h3>
-                    <p class="text-lg text-gray-700 leading-relaxed font-medium">
-                        GlycoLean uses a synergistic blend of minerals and plant extracts to support your body's natural ability to process sugar, helping you maintain steady energy all day long.
-                    </p>
-                    <div class="grid grid-cols-2 gap-4">
-                        <div class="p-4 bg-brand-50 rounded-2xl border border-brand-100 flex items-center gap-3">
+                <div class="bg-white p-10 rounded-[3rem] shadow-xl border border-brand-100">
+                    <h3 class="text-2xl font-display font-black mb-8 text-brand-950">Built for Daily Use</h3>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                        <div class="flex items-center gap-3 p-4 bg-brand-50 rounded-2xl">
                             <span class="text-brand-500 font-black">✔</span>
-                            <span class="text-xs font-black text-brand-900 uppercase tracking-tighter">Healthy Balance</span>
+                            <span class="text-xs font-black uppercase tracking-tighter">Natural Formula</span>
                         </div>
-                        <div class="p-4 bg-brand-50 rounded-2xl border border-brand-100 flex items-center gap-3">
+                        <div class="flex items-center gap-3 p-4 bg-brand-50 rounded-2xl">
                             <span class="text-brand-500 font-black">✔</span>
-                            <span class="text-xs font-black text-brand-900 uppercase tracking-tighter">Sustained Vitality</span>
+                            <span class="text-xs font-black uppercase tracking-tighter">Non-GMO</span>
+                        </div>
+                        <div class="flex items-center gap-3 p-4 bg-brand-50 rounded-2xl">
+                            <span class="text-brand-500 font-black">✔</span>
+                            <span class="text-xs font-black uppercase tracking-tighter">No Stimulants</span>
+                        </div>
+                        <div class="flex items-center gap-3 p-4 bg-brand-50 rounded-2xl">
+                            <span class="text-brand-500 font-black">✔</span>
+                            <span class="text-xs font-black uppercase tracking-tighter">Easy Daily Routine</span>
                         </div>
                     </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- REVIEWS SECTION -->
-    <section id="reviews" class="py-24 bg-white overflow-hidden border-t border-brand-50">
-        <div class="max-w-7xl mx-auto px-4 mb-12 text-center">
-            <h2 class="text-4xl font-display font-black text-brand-950 tracking-tight">Verified User Results</h2>
-            <p class="mt-3 text-gray-500 font-bold uppercase tracking-widest text-xs">Based on 12,000+ satisfied customers</p>
-        </div>
-        
-        <!-- INFINITE CAROUSEL -->
-        <div class="reviews-container">
-            <div class="reviews-slider animate-scroll">
-                <div class="review-card">
-                    <div class="flex text-accent-500 mb-5 text-xs font-black gap-1 tracking-widest uppercase">★★★★★ Cravings Gone</div>
-                    <p class="text-brand-900 leading-relaxed mb-6 italic text-base text-left">"I used to reach for a chocolate bar every afternoon. Since starting GlycoLean, my energy is steady and those sugar cravings have completely disappeared. I feel light and focused."</p>
-                    <p class="font-bold text-brand-500 text-sm text-left">— Sarah M., Arizona</p>
-                </div>
-                <div class="review-card">
-                    <div class="flex text-accent-500 mb-5 text-xs font-black gap-1 tracking-widest uppercase">★★★★★ Life Changing</div>
-                    <p class="text-brand-900 leading-relaxed mb-6 italic text-base text-left">"My doctor was impressed with my latest check-up. This supplement has become a non-negotiable part of my morning routine. No more morning fog!"</p>
-                    <p class="font-bold text-brand-500 text-sm text-left">— David H., Michigan</p>
-                </div>
-                <div class="review-card">
-                    <div class="flex text-accent-500 mb-5 text-xs font-black gap-1 tracking-widest uppercase">★★★★★ Weight Support</div>
-                    <p class="text-brand-900 leading-relaxed mb-6 italic text-base text-left">"I've finally started losing those last 10 pounds that were stuck for years. It turns out I just needed to get my sugar levels in check. GlycoLean worked wonders."</p>
-                    <p class="font-bold text-brand-500 text-sm text-left">— Linda T., California</p>
-                </div>
-                <div class="review-card">
-                    <div class="flex text-accent-500 mb-5 text-xs font-black gap-1 tracking-widest uppercase">★★★★★ Fast Shipping</div>
-                    <p class="text-brand-900 leading-relaxed mb-6 italic text-base text-left">"Ordered on a Friday, arrived on Monday. The packaging is discrete and the product is high quality. Best blood sugar support I've tried so far."</p>
-                    <p class="font-bold text-brand-500 text-sm text-left">— Kevin S., New York</p>
-                </div>
-                <!-- Duplicate for seamless scroll -->
-                <div class="review-card">
-                    <div class="flex text-accent-500 mb-5 text-xs font-black gap-1 tracking-widest uppercase">★★★★★ Cravings Gone</div>
-                    <p class="text-brand-900 leading-relaxed mb-6 italic text-base text-left">"I used to reach for a chocolate bar every afternoon. Since starting GlycoLean, my energy is steady."</p>
-                    <p class="font-bold text-brand-500 text-sm text-left">— Sarah M., Arizona</p>
+                    <p class="mt-8 text-sm text-gray-500 font-medium">No complicated protocols. No extreme restrictions. Just consistent daily support.</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- INGREDIENTS SECTION -->
-    <section id="ingredients" class="py-24 bg-brand-50 reveal-on-scroll border-y border-brand-100/50">
+    <section id="ingredients" class="py-24 bg-white reveal-on-scroll">
         <div class="max-w-7xl mx-auto px-4">
             <div class="text-center mb-16">
-                <h2 class="text-4xl font-display font-black text-brand-950 tracking-tight">The Science of GlycoLean</h2>
-                <p class="text-brand-500 font-bold uppercase tracking-widest text-xs mt-3">Pure, Potent, & Lab-Tested</p>
+                <h2 class="text-4xl font-display font-black text-brand-950 tracking-tight">Inside Every Capsule</h2>
+                <p class="text-brand-500 font-bold uppercase tracking-widest text-xs mt-3">Precision Natural Extraction</p>
             </div>
             
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-                <div class="group bg-white p-8 rounded-3xl border border-transparent hover:border-brand-500 transition-all shadow-sm text-left">
-                    <div class="w-12 h-12 bg-brand-500 text-white rounded-xl flex items-center justify-center mb-6 font-black text-lg">01</div>
-                    <h5 class="text-lg font-black text-brand-900 mb-3">Berberine HCL</h5>
-                    <p class="text-sm text-gray-600 leading-relaxed font-medium">A powerful botanical extract known to support healthy glucose metabolism at a cellular level.</p>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-brand-50 p-8 rounded-3xl border border-transparent hover:border-brand-500 transition-all text-left">
+                    <h5 class="text-xl font-black text-brand-900 mb-3">Maca Root Extract</h5>
+                    <p class="text-sm text-gray-600 leading-relaxed font-medium">Supports natural energy levels and helps your body adapt to metabolic stress.</p>
                 </div>
-                <div class="group bg-white p-8 rounded-3xl border border-transparent hover:border-brand-500 transition-all shadow-sm text-left">
-                    <div class="w-12 h-12 bg-brand-500 text-white rounded-xl flex items-center justify-center mb-6 font-black text-lg">02</div>
-                    <h5 class="text-lg font-black text-brand-900 mb-3">Chromium Picolinate</h5>
-                    <p class="text-sm text-gray-600 leading-relaxed font-medium">An essential trace mineral that helps improve insulin sensitivity and macronutrient breakdown.</p>
+                <div class="bg-brand-50 p-8 rounded-3xl border border-transparent hover:border-brand-500 transition-all text-left">
+                    <h5 class="text-xl font-black text-brand-900 mb-3">Grape Seed Extract</h5>
+                    <p class="text-sm text-gray-600 leading-relaxed font-medium">Provides powerful antioxidants that help protect cells and support glucose metabolism.</p>
                 </div>
-                <div class="group bg-white p-8 rounded-3xl border border-transparent hover:border-brand-500 transition-all shadow-sm text-left">
-                    <div class="w-12 h-12 bg-brand-500 text-white rounded-xl flex items-center justify-center mb-6 font-black text-lg">03</div>
-                    <h5 class="text-lg font-black text-brand-900 mb-3">Cinnamon Bark</h5>
-                    <p class="text-sm text-gray-600 leading-relaxed font-medium">Contains bioactive compounds that mimic insulin and help manage post-meal sugar spikes.</p>
+                <div class="bg-brand-50 p-8 rounded-3xl border border-transparent hover:border-brand-500 transition-all text-left">
+                    <h5 class="text-xl font-black text-brand-900 mb-3">Green Tea Extract</h5>
+                    <p class="text-sm text-gray-600 leading-relaxed font-medium">Supports metabolic activity and helps maintain healthy insulin response.</p>
                 </div>
-                <div class="group bg-white p-8 rounded-3xl border border-transparent hover:border-brand-500 transition-all shadow-sm text-left">
-                    <div class="w-12 h-12 bg-brand-500 text-white rounded-xl flex items-center justify-center mb-6 font-black text-lg">04</div>
-                    <h5 class="text-lg font-black text-brand-900 mb-3">Gymnema Sylvestre</h5>
-                    <p class="text-sm text-gray-600 leading-relaxed font-medium">Known as the "Sugar Destroyer," it helps curb cravings and block sugar absorption in the gut.</p>
+                <div class="bg-brand-50 p-8 rounded-3xl border border-transparent hover:border-brand-500 transition-all text-left">
+                    <h5 class="text-xl font-black text-brand-900 mb-3">African Mango Seed Extract</h5>
+                    <p class="text-sm text-gray-600 leading-relaxed font-medium">Helps support appetite control and metabolic balance.</p>
                 </div>
+                <div class="bg-brand-50 p-8 rounded-3xl border border-transparent hover:border-brand-500 transition-all text-left">
+                    <h5 class="text-xl font-black text-brand-900 mb-3">Astragalus Root Extract</h5>
+                    <p class="text-sm text-gray-600 leading-relaxed font-medium">Traditionally used to support metabolic health and overall resilience.</p>
+                </div>
+                <div class="bg-brand-50 p-8 rounded-3xl border border-transparent hover:border-brand-500 transition-all text-left">
+                    <h5 class="text-xl font-black text-brand-900 mb-3">Eleutherococcus Senticosus</h5>
+                    <p class="text-sm text-gray-600 leading-relaxed font-medium">An adaptogenic root that supports energy, stress response, and metabolic stability.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- NOTICE SECTION -->
+    <section class="py-24 authority-gradient text-white reveal-on-scroll">
+        <div class="max-w-4xl mx-auto px-4 text-center">
+            <h2 class="text-3xl lg:text-5xl font-display font-black mb-12 tracking-tight">What You May Notice</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-8 text-left">
+                <div class="flex items-start gap-4 p-6 bg-white/5 rounded-2xl backdrop-blur-sm border border-white/10">
+                    <span class="text-accent-500 text-2xl font-black">★</span>
+                    <p class="font-bold opacity-90">More stable energy throughout the day</p>
+                </div>
+                <div class="flex items-start gap-4 p-6 bg-white/5 rounded-2xl backdrop-blur-sm border border-white/10">
+                    <span class="text-accent-500 text-2xl font-black">★</span>
+                    <p class="font-bold opacity-90">Fewer energy crashes after meals</p>
+                </div>
+                <div class="flex items-start gap-4 p-6 bg-white/5 rounded-2xl backdrop-blur-sm border border-white/10">
+                    <span class="text-accent-500 text-2xl font-black">★</span>
+                    <p class="font-bold opacity-90">Better control over cravings</p>
+                </div>
+                <div class="flex items-start gap-4 p-6 bg-white/5 rounded-2xl backdrop-blur-sm border border-white/10">
+                    <span class="text-accent-500 text-2xl font-black">★</span>
+                    <p class="font-bold opacity-90">A greater sense of balance and well-being</p>
+                </div>
+            </div>
+            <div class="mt-16">
+                <p class="text-xl font-medium mb-10 italic">"You don’t need another extreme solution. You need something that works with your body — not against it."</p>
+                <a href="https://your-clickbank-link-here" class="inline-flex items-center justify-center px-14 py-6 bg-white text-brand-500 rounded-full text-2xl font-black uppercase tracking-tight shadow-2xl hover:scale-105 transition-all">Order Glyco Lean Now</a>
             </div>
         </div>
     </section>
 
     <!-- GUARANTEE -->
     <section class="py-24 bg-white reveal-on-scroll">
-        <div class="max-w-4xl mx-auto px-4">
-            <div class="bg-brand-50 rounded-[3rem] p-10 lg:p-16 shadow-lg border-b-8 border-brand-500 text-center relative overflow-hidden">
-                <div class="relative z-10">
-                    <h2 class="text-3xl lg:text-4xl font-display font-black text-brand-950 mb-8 tracking-tight">Your Success is Guaranteed</h2>
-                    <p class="text-lg text-gray-700 max-w-2xl mx-auto mb-10 leading-relaxed font-medium">
-                        Try GlycoLean for 60 full days. If you don't see a measurable difference in your energy, cravings, or blood sugar readings, we'll give you back every penny. No hassle, no questions asked.
-                    </p>
-                    <a href="https://your-clickbank-link-here" class="inline-flex items-center justify-center px-12 py-4 bg-brand-500 text-white rounded-full text-lg font-black uppercase tracking-tight shadow-md hover:scale-105 transition-all">Start Your Risk-Free Journey</a>
-                </div>
+        <div class="max-w-4xl mx-auto px-4 text-center">
+            <div class="inline-block p-4 rounded-full bg-brand-50 mb-6">
+                <svg class="w-12 h-12 text-brand-500" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
             </div>
+            <h2 class="text-4xl font-display font-black text-brand-950 mb-6 tracking-tight">Satisfaction Guaranteed</h2>
+            <p class="text-lg text-gray-700 max-w-2xl mx-auto mb-10 leading-relaxed font-medium">
+                Try Glyco Lean with confidence. If you’re not satisfied within 60 days, simply request a refund — no hassle.
+            </p>
         </div>
     </section>
 
-    <!-- STRATEGIC FAQ -->
+    <!-- FAQ SECTION -->
     <section id="faq" class="py-24 bg-brand-50">
-        <div class="max-w-4xl mx-auto px-4">
-            <h2 class="text-4xl font-display font-black text-center text-brand-950 mb-16 tracking-tight">Frequently Asked Questions</h2>
+        <div class="max-w-3xl mx-auto px-4">
+            <h2 class="text-4xl font-display font-black text-center text-brand-950 mb-16 tracking-tight">FAQ</h2>
             <div class="space-y-4">
-                <details class="group bg-white border border-gray-200 rounded-2xl overflow-hidden transition-all duration-300 shadow-sm">
-                    <summary class="flex items-center justify-between p-6 cursor-pointer font-black select-none text-brand-950 hover:bg-brand-100/20 text-lg">
-                        Is GlycoLean right for me?
+                <details class="group bg-white border border-gray-200 rounded-2xl overflow-hidden shadow-sm">
+                    <summary class="flex items-center justify-between p-6 cursor-pointer font-black text-brand-950 hover:bg-brand-100/20 text-lg">
+                        Are there side effects?
                         <svg class="h-6 w-6 transition-transform group-open:rotate-180 text-brand-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="3"><path d="M19 9l-7 7-7-7" /></svg>
                     </summary>
-                    <div class="p-6 pt-0 text-gray-700 leading-relaxed border-t border-brand-50 font-medium">
-                        If you struggle with afternoon fatigue, frequent sugar cravings, or difficulty managing weight despite a healthy diet, GlycoLean is designed for you. It provides targeted support for those looking to optimize their metabolic health naturally.
+                    <div class="p-6 pt-0 text-gray-600 font-medium">
+                        Glyco Lean is made with natural ingredients and is generally well tolerated. If you have a medical condition or take medication, consult your healthcare provider before use.
                     </div>
                 </details>
-
-                <details class="group bg-white border border-gray-200 rounded-2xl overflow-hidden transition-all duration-300 shadow-sm">
-                    <summary class="flex items-center justify-between p-6 cursor-pointer font-black select-none text-brand-950 hover:bg-brand-100/20 text-lg">
-                        How should I take GlycoLean?
+                <details class="group bg-white border border-gray-200 rounded-2xl overflow-hidden shadow-sm">
+                    <summary class="flex items-center justify-between p-6 cursor-pointer font-black text-brand-950 hover:bg-brand-100/20 text-lg">
+                        How do I take it?
                         <svg class="h-6 w-6 transition-transform group-open:rotate-180 text-brand-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="3"><path d="M19 9l-7 7-7-7" /></svg>
                     </summary>
-                    <div class="p-6 pt-0 text-gray-700 leading-relaxed border-t border-brand-50 font-medium">
-                        For best results, take one capsule 20-30 minutes before your largest meal of the day with a glass of water. Consistency is key, so we recommend taking it at the same time every day.
+                    <div class="p-6 pt-0 text-gray-600 font-medium">
+                        Take as directed daily for best results. Typically, one capsule per day with a meal is the recommended routine.
                     </div>
                 </details>
-
-                <details class="group bg-white border border-gray-200 rounded-2xl overflow-hidden transition-all duration-300 shadow-sm">
-                    <summary class="flex items-center justify-between p-6 cursor-pointer font-black select-none text-brand-950 hover:bg-brand-100/20 text-lg">
-                        What if it doesn't work for me?
+                <details class="group bg-white border border-gray-200 rounded-2xl overflow-hidden shadow-sm">
+                    <summary class="flex items-center justify-between p-6 cursor-pointer font-black text-brand-950 hover:bg-brand-100/20 text-lg">
+                        Is this a subscription?
                         <svg class="h-6 w-6 transition-transform group-open:rotate-180 text-brand-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="3"><path d="M19 9l-7 7-7-7" /></svg>
                     </summary>
-                    <div class="p-6 pt-0 text-gray-700 leading-relaxed border-t border-brand-50 font-medium">
-                        Every body is unique. While most people see results within 30 days, we give you a full 60 days to test it out. If you're not happy, just email us and we'll refund your entire purchase price.
+                    <div class="p-6 pt-0 text-gray-600 font-medium">
+                        No. All orders are one-time purchases. You will never be billed automatically or hidden charges.
+                    </div>
+                </details>
+                <details class="group bg-white border border-gray-200 rounded-2xl overflow-hidden shadow-sm">
+                    <summary class="flex items-center justify-between p-6 cursor-pointer font-black text-brand-950 hover:bg-brand-100/20 text-lg">
+                        How long before I notice results?
+                        <svg class="h-6 w-6 transition-transform group-open:rotate-180 text-brand-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="3"><path d="M19 9l-7 7-7-7" /></svg>
+                    </summary>
+                    <div class="p-6 pt-0 text-gray-600 font-medium">
+                        Results may vary, but many users report changes within a few weeks of consistent use.
+                    </div>
+                </details>
+                <details class="group bg-white border border-gray-200 rounded-2xl overflow-hidden shadow-sm">
+                    <summary class="flex items-center justify-between p-6 cursor-pointer font-black text-brand-950 hover:bg-brand-100/20 text-lg">
+                        What’s inside Glyco Lean?
+                        <svg class="h-6 w-6 transition-transform group-open:rotate-180 text-brand-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="3"><path d="M19 9l-7 7-7-7" /></svg>
+                    </summary>
+                    <div class="p-6 pt-0 text-gray-600 font-medium">
+                        A blend of plant-based ingredients selected to support metabolic balance and energy, including Maca Root, Grape Seed, Green Tea, African Mango, Astragalus, and Eleutherococcus.
                     </div>
                 </details>
             </div>
-        </div>
-    </section>
-
-    <!-- FINAL CTA -->
-    <section class="py-24 authority-gradient text-white text-center px-4 relative overflow-hidden">
-        <div class="absolute top-0 left-0 w-full h-1 bg-white/20"></div>
-        <div class="max-w-4xl mx-auto">
-            <h2 class="text-4xl lg:text-7xl font-display font-black mb-8 leading-tight tracking-tighter">Your Health, Optimized</h2>
-            <p class="text-lg lg:text-xl text-brand-100 mb-12 max-w-2xl mx-auto font-medium opacity-90">Secure your supply of GlycoLean while current inventory lasts. Choose the package that's right for you.</p>
-            <a href="https://your-clickbank-link-here" class="inline-flex items-center justify-center px-14 py-7 bg-white text-brand-500 rounded-full text-2xl font-black uppercase tracking-tight shadow-2xl hover:scale-105 transition-all cta-pulse">Claim Your 50% Discount Now</a>
-            <p class="mt-8 text-[10px] font-black uppercase tracking-[0.4em] opacity-60">Authorized Independent Distributor Supply</p>
         </div>
     </section>
 
@@ -370,19 +340,16 @@
     <footer class="bg-brand-950 text-white pt-20 pb-12">
         <div class="max-w-7xl mx-auto px-4 flex flex-col items-center text-center">
             <a href="/" class="flex items-center gap-3 mb-8">
-                <img src="images/glycolean-logo.png" alt="GlycoLean Logo" class="h-10 w-auto brightness-0 invert">
-                <span class="font-display font-black text-3xl uppercase tracking-tighter text-white">GLYCO<span class="text-brand-500">LEAN</span></span>
+                <img src="images/glycolean-logo.png" alt="Logo" class="h-10 w-auto brightness-0 invert">
+                <span class="font-display font-black text-3xl uppercase tracking-tighter text-white">GLYCO <span class="text-brand-500">LEAN</span></span>
             </a>
-            <p class="text-gray-400 text-xs font-black uppercase tracking-[0.3em] mb-10">
-                Official Independent Distributor Platform
-            </p>
-            <div class="flex gap-8 mb-10 text-[10px] font-black uppercase tracking-widest text-gray-500">
-                <button onclick="openModal('modal-privacy')" class="hover:text-white transition-colors">Privacy Policy</button>
-                <button onclick="openModal('modal-terms')" class="hover:text-white transition-colors">Terms of Service</button>
-                <button onclick="openModal('modal-help')" class="hover:text-white transition-colors">Contact Support</button>
+            <div class="flex flex-wrap justify-center gap-8 mb-10 text-[10px] font-black uppercase tracking-widest text-gray-500">
+                <a href="#" class="hover:text-white transition-colors">Scientific References</a>
+                <a href="#" class="hover:text-white transition-colors">Privacy Policy</a>
+                <a href="#" class="hover:text-white transition-colors">Terms of Service</a>
             </div>
             <p class="text-gray-500 text-[10px] font-black uppercase tracking-widest">
-                &copy; 2026 GlycoLean. All Rights Reserved.
+                &copy; 2026 Glyco Lean. All rights reserved.
             </p>
         </div>
     </footer>
@@ -390,48 +357,18 @@
     <!-- FDA COMPLIANCE -->
     <section class="bg-black py-16 text-center px-4">
         <div class="max-w-5xl mx-auto space-y-8">
+            <h4 class="text-white/40 text-[10px] uppercase tracking-[0.4em] font-black">Important Disclaimer</h4>
             <p class="text-[11px] text-gray-500 leading-relaxed max-w-4xl mx-auto font-bold">
-                *The statements on this website have not been evaluated by the Food and Drug Administration. This product is a dietary supplement and is not intended to diagnose, treat, cure, or prevent any disease. Individual results may vary. Consult your doctor before beginning any new supplement regime.
+                Statements on this website have not been evaluated by the Food and Drug Administration. This product is not intended to diagnose, treat, cure, or prevent any disease. Consult your physician before use if you are pregnant, nursing, taking medication, or have a medical condition. Individual results may vary.
             </p>
-            <div class="h-px w-24 bg-white/10 mx-auto"></div>
-            <p class="text-[9px] text-gray-600 uppercase tracking-[0.5em] font-black">Quality Guaranteed • Made in USA</p>
         </div>
     </section>
-
-    <!-- MODAL SYSTEM -->
-    <div id="modal-overlay" class="fixed inset-0 bg-brand-950/98 backdrop-blur-xl z-[200] hidden flex items-center justify-center p-4 opacity-0 transition-opacity duration-300">
-        <div id="modal-container" class="bg-white rounded-[3rem] w-full max-w-2xl max-h-[85vh] overflow-y-auto shadow-2xl transform scale-95 transition-all duration-300 relative border-[8px] border-brand-50">
-            <button onclick="closeModal()" class="absolute top-10 right-10 p-4 text-gray-400 hover:text-brand-950 hover:bg-brand-50 rounded-full transition-all">
-                <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="4"><path d="M6 18L18 6M6 6l12 12"/></svg>
-            </button>
-            <div id="modal-content-area" class="p-12 md:p-20 text-brand-900 text-base leading-relaxed font-bold"></div>
-        </div>
-    </div>
 
     <script>
         const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => { if (entry.isIntersecting) entry.target.classList.add('active'); });
         }, { threshold: 0.1 });
         document.querySelectorAll('.reveal-on-scroll').forEach(el => observer.observe(el));
-
-        const modalData = {
-            'modal-privacy': `<h3 class="text-4xl font-display font-black text-white mb-8 bg-brand-500 p-4 rounded-xl">Privacy Policy</h3><p class="mb-6 text-lg">We use 256-bit encryption to protect your data. We never sell your personal information to third parties.</p>`,
-            'modal-terms': `<h3 class="text-4xl font-display font-black text-white mb-8 bg-brand-500 p-4 rounded-xl">Terms of Service</h3><p class="mb-6 text-lg">Purchases are subject to our 60-day money-back guarantee policy. GlycoLean is a registered dietary supplement brand.</p>`,
-            'modal-help': `<h3 class="text-4xl font-display font-black text-white mb-8 bg-brand-500 p-4 rounded-xl">Customer Support</h3><p class="mb-8 text-xl font-black text-brand-500">support@glycolean-support.com</p>`
-        };
-
-        function openModal(id) {
-            document.getElementById('modal-content-area').innerHTML = modalData[id];
-            const overlay = document.getElementById('modal-overlay');
-            overlay.classList.remove('hidden');
-            setTimeout(() => { overlay.classList.add('opacity-100'); document.getElementById('modal-container').classList.add('scale-100'); }, 10);
-        }
-
-        function closeModal() {
-            const overlay = document.getElementById('modal-overlay');
-            overlay.classList.remove('opacity-100'); document.getElementById('modal-container').classList.remove('scale-100');
-            setTimeout(() => overlay.classList.add('hidden'), 300);
-        }
     </script>
 </body>
 </html>
